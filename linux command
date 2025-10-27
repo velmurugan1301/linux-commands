@@ -1,0 +1,227 @@
+🗂️ 1. File and Directory Management
+Command	Description
+ls	List directory contents
+cd	Change directory
+pwd	Print working directory
+cp	Copy files and directories
+mv	Move or rename files and directories
+rm	Remove files or directories
+mkdir	Create new directories
+rmdir	Remove empty directories
+touch	Create empty files or update timestamps
+find	Search for files in a directory hierarchy
+locate	Find files by name
+tree	Display directories in a tree-like structure
+chmod	Change file permissions
+chown	Change file owner and group
+chgrp	Change group ownership
+stat	Display file or filesystem status
+📄 2. File Viewing and Editing
+Command	Description
+cat	Display file content
+tac	Display file content in reverse
+more	View file content one page at a time
+less	Scroll through file content interactively
+head	Show the first lines of a file
+tail	Show the last lines of a file
+nano	Simple text editor
+vim / vi	Advanced text editor
+emacs	Powerful text editor
+grep	Search text using patterns
+sed	Stream editor for text manipulation
+awk	Pattern scanning and processing language
+cut	Extract specific columns or fields
+sort	Sort lines of text files
+uniq	Report or omit repeated lines
+⚙️ 3. Process Management
+Command	Description
+ps	Show running processes
+top	Display running tasks dynamically
+htop	Interactive process viewer (improved top)
+kill	Terminate a process by PID
+killall	Kill processes by name
+bg	Resume a job in the background
+fg	Bring a job to the foreground
+jobs	List background jobs
+nice	Run a command with modified priority
+renice	Change priority of running processes
+uptime	Show system uptime
+time	Measure program execution time
+💽 4. Disk Management
+Command	Description
+df	Show disk space usage
+du	Estimate file or directory size
+fdisk	Partition table manipulator
+lsblk	List information about block devices
+mount	Mount a filesystem
+umount	Unmount a filesystem
+parted	Manage partitions
+mkfs	Create a filesystem
+fsck	Check and repair filesystem
+blkid	Print block device attributes
+🌐 5. Networking
+Command	Description
+ifconfig	Configure network interfaces (deprecated)
+ip	Manage IP addresses, routes, and interfaces
+ping	Test network connectivity
+netstat	Network connections (deprecated)
+ss	Socket statistics (replacement for netstat)
+traceroute	Trace the route to a host
+nslookup	Query DNS servers
+dig	DNS lookup utility
+wget	Download files from web
+curl	Transfer data via URLs
+scp	Secure copy over SSH
+ssh	Secure remote login
+ftp	File transfer client
+👥 6. User and Group Management
+Command	Description
+useradd	Create a new user
+usermod	Modify user information
+userdel	Delete a user
+groupadd	Create a new group
+groupdel	Delete a group
+passwd	Change a user’s password
+chage	Manage password expiry
+whoami	Display current user
+who	Show logged-in users
+w	Show who is logged in and what they’re doing
+id	Display UID and GID
+groups	Show user group memberships
+🧠 7. System Information & Monitoring
+Command	Description
+uname	Print system information
+hostname	Show or set hostname
+uptime	System uptime and load
+dmesg	Kernel and boot messages
+free	Show memory usage
+vmstat	Virtual memory statistics
+lscpu	CPU architecture info
+lsusb	List USB devices
+lspci	List PCI devices
+lshw	List detailed hardware info
+🗜️ 8. Archiving & Compression
+Command	Description
+tar	Archive files
+tar -czf file.tar.gz dir/	Create compressed tarball
+tar -xzf file.tar.gz	Extract compressed tarball
+zip / unzip	Compress/decompress ZIP files
+gzip / gunzip	Compress/decompress Gzip files
+bzip2 / bunzip2	Compress/decompress using bzip2
+xz / unxz	Compress/decompress using xz
+📦 9. Package Management
+Debian / Ubuntu
+Command	Description
+apt-get install <pkg>	Install a package
+apt-get update	Update package list
+apt-get upgrade	Upgrade installed packages
+apt-get remove <pkg>	Remove a package
+apt-cache search <pkg>	Search for a package
+Red Hat / CentOS / Fedora
+Command	Description
+yum install <pkg>	Install package
+yum update	Update system
+yum remove <pkg>	Remove package
+dnf install <pkg>	Install package (newer)
+dnf update	Update system
+rpm -i <pkg.rpm>	Install RPM
+dpkg -i <pkg.deb>	Install DEB
+🧰 10. Scheduling Tasks
+Command	Description
+cron	Run scheduled commands
+crontab -e	Edit cron jobs
+crontab -l	List cron jobs
+crontab -r	Remove cron jobs
+at 09:00	Schedule one-time job
+batch	Run commands when system load is low
+sleep 5s	Delay for 5 seconds
+🔐 11. File Permissions & Security
+Command	Description
+chmod	Change permissions
+chown	Change owner and group
+chgrp	Change group ownership
+umask	Set default permissions
+setfacl / getfacl	Manage ACLs
+sudo	Execute command as another user
+visudo	Safely edit sudoers file
+passwd	Change password
+💾 12. Backup & Restore
+Command	Description
+rsync	Sync files/directories
+cpio	Copy files to/from archives
+dd	Disk cloning or image creation
+dd if=/dev/sda of=/backup.img	Backup a disk
+dd if=/backup.img of=/dev/sda	Restore a disk
+🧩 13. System Diagnostics & Troubleshooting
+Command	Description
+dmesg	Kernel ring buffer
+journalctl	View system logs
+strace	Trace system calls
+lsof	List open files
+vmstat	Virtual memory stats
+iostat	I/O stats
+mpstat	CPU usage stats
+pidstat	Per-process stats
+watch	Periodically run a command
+🌍 14. Networking & Remote Management
+Command	Description
+ip addr	Show IP addresses
+ip route	Show routing table
+ss	Socket stats
+nmap	Network scanner
+nc (Netcat)	Network connections utility
+iptables	Manage firewall rules
+ufw	Simple firewall frontend
+tcpdump	Packet capture
+scp, rsync	Secure file transfer
+✂️ 15. Text Processing Utilities
+Command	Description
+grep	Search for text
+sed	Stream edit text
+awk	Process and format text
+cut	Extract fields
+sort	Sort text lines
+uniq	Remove duplicates
+tee	Output to file and console
+tr	Translate or delete characters
+paste	Merge lines
+wc	Count words, lines, bytes
+🔁 16. System Shutdown & Reboot
+Command	Description
+shutdown -h now	Shut down immediately
+shutdown -r now	Reboot system
+reboot	Reboot system
+halt	Halt system
+poweroff	Power off
+init 0	Shutdown
+init 6	Reboot
+🧱 17. Filesystem Mounting & Management
+Command	Description
+mount /dev/sda1 /mnt	Mount partition
+umount /mnt	Unmount filesystem
+/etc/fstab	Persistent mount configuration
+blkid	Block device attributes
+fsck	Check and repair filesystem
+🛡️ 18. Filesystem Permissions & Security
+Command	Description
+chmod 755 file	Set read/write/execute for owner
+chown user:group file	Change file ownership
+chgrp group file	Change group
+umask 022	Default permission mask
+setfacl / getfacl	Manage ACLs
+🐳 19. Containerization & Orchestration
+Docker
+Command	Description
+docker run <image>	Run container
+docker ps -a	List containers
+docker build -t <image>	Build image
+docker exec -it <id> bash	Enter container shell
+docker stop <id>	Stop container
+docker rm <id>	Remove container
+docker images	List images
+docker-compose up / down	Manage multi-container apps
+Kubernetes
+Command	Description
+kubectl get pods	List pods
+kubectl get nodes	List nodes
+kubectl get services	List services
